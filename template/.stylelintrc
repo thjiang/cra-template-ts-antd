@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["inside-block"],
+        "except": ["first-nested", "inside-block-and-after-rule"]
+      }
+    ],
+    "color-hex-case": "upper",
+    "max-nesting-depth": 4,
+    "no-empty-source": null,
+    "unit-no-unknown": [
+      true,
+      {
+        "ignoreUnits": ["rpx", "dpx"]
+      }
+    ],
+    "comment-empty-line-before": "never",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "unicode-bom": "never",
+    "no-descending-specificity": null
+  }
+}
